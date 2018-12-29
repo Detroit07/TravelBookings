@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"/>
+<script>
+function validator(){
+var name=document.getElementById('username').value;
+var mobile=document.getElementById('mob').value; 
+var arrival=document.getElementById('arvl').value;
+var departure=document.getElementById('dept').value;
+
+if(username==""||mobile==""||arrvl==""||dept==""){
+alert('Please fill in all fields');
+return false;
+}
+else{
+return true;
+}
+}
+</script>
+</head>
+<body>
+<center><h1 style="font face:arial black;font-size:50px;color:gray">&nbsp&nbspMake A Reservation</h1></center>
+<center><img src="w.png"></center>
+<br>
+<br>
+<form name="register" method="post" action="booking.php" onSubmit="return validator()">
+<table border=0 height=90% width=100%>	
+<tr>
+<td><h3>Name</h3></td><th><input type="textbox"name="n" id="username"></th>
+</tr>
+<tr>
+<td><h3>Mobile No</h3></td><th><input type="textbox"name="m" id="mob"></th>
+</tr>
+<tr>
+<td><h3>No Of Person</h3></td>
+<th><select name="p">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>more then 5</option></th>
+</tr>
+<tr>
+<td><h3>No Of flight ticket</h3></td>
+<th><select name="o">
+<option>1</option>
+<option>2</option>
+<option>3</option></th>
+</tr>
+<td><h3>Hill Station</h3>
+<th><select name="r">
+<option>none</option>
+<option>DARJEELING (3000)</option>
+<option>MANALI(3200)</option>
+<option>OOTY (4800)</option>
+<option>SHIMLA (3500)</option>
+</th>
+</tr>
+<tr><td><h3>Arrival</h3></td><th><input type=date name="a" id="arvl"></th></tr>
+<tr><td><h3>Departure</h3></td><th><input type=date name="d"id="dept"></th></tr>
+<tr><th colspan=2><input type="Submit" value="SUBMIT"/></th></tr>
+</table>
+</form>
+<h2><font face="arial black" color="gray"><center>Price Indicated Is For 3 days</center><h2>
+</body>
+</html>

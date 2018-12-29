@@ -1,0 +1,34 @@
+
+.navbar-brand
+{
+	font-size:30px;
+	font-weight:bold;
+	font-family:arial black;
+    }
+	.container-fluid{
+		margin:0;
+		padding:0;
+        
+		
+	}
+	#footer{
+		color:grey;
+		background-color:#333745;
+	}
+	h2{
+		color:white;
+	}
+	#box1{
+		color:grey;
+	}
+	#box2{
+		background-color:#9c9f84;
+	}
+	.carousel-inner >.item>img.carousel-inner>.item>a>img{
+		max-height:550px;
+		
+	}
+	
+	
+	
+	
